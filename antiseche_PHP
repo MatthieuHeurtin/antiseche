@@ -68,3 +68,20 @@ while ($nombre_de_lignes <= 100)
 //les balises include
 
 <?php include("../include/menu.php"); ?>
+
+
+//les champs de texte caché
+<input type="hidden" name="pseudo" value="Mateo21" />
+
+///////////////les variables de sessions
+<?php
+session_start();
+$_SESSION['mail'] = $_POST['mail']; //on l'init
+?> 
+-------------------------------------
+<?php
+session_start();
+$mail = $_SESSION['mail'] ;//on la recup dans une autre page
+?>
+
+

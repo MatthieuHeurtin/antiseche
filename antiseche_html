@@ -82,6 +82,18 @@ balise <p></p>
     <p>Bla bla bla bla</p>
 </article>
 
+/////////////////////////////////////////////////////////////////////////////////formulaire
+<select name="choix">
+    <option value="choix1">Choix 1</option>
+    <option value="choix2">Choix 2</option>
+    <option value="choix3">Choix 3</option>
+    <option value="choix4">Choix 4</option>
+</select>
+
+///////////////////////////////////////case à cocher
+<input type="checkbox" name="case" id="case" /> <label for="case">Ma case à cocher</label>
+
+
 
 
 

@@ -84,3 +84,24 @@ margin-letf ou mmargin-bottom marge extérieur
 
 /////bordure
 	border: 3px solid red;
+
+
+
+///////////////////Pour le fond
+body
+{
+    background-image: url("soleil.png");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: top right; /* Le fond sera placé en haut à droite */
+	opacity: 0.6; change la transparence
+}
+p
+{
+    border-radius: 10px; bordure arrondie
+}
+
+
+
+
+

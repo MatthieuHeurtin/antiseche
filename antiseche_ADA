@@ -67,6 +67,105 @@ for i in Scores'range loop
 Pour le type boolean on dit True et False
 
 
+with Ada.text_Io, Ada.Integer_text_Io;
+use Ada.text_Io, Ada.Integer_text_Io;
+
+
+procedure traitement_sequentiel_2 is
+
+	function F(x, a:integer) return integer is
+--variable de la fonction
+		b:integer;
+	begin
+--corps de la fonction
+		
+		if x>a then
+			return x;
+		else
+			return a;
+		end if;
+
+	end;
+
+
+--variable du main
+courant, x, a: integer;
+
+
+begin
+--corp du main
+Get(courant);
+a:=courant;
+Get(courant);
+x:=courant;
+
+
+	while courant /=-1 loop
+
+	a:=F(x, a);
+	Get(courant);
+	x:=courant;
+
+
+
+
+
+
+
+	end loop;
+
+Put(a);
+end;
+
+-- on déclare une constante en ADA
+TailleMax : constant natural := 5 ; 
+
+
+-- tableau en ADA
+Type T_Tableau is array(0..TailleMax) of integer ; -- c'est un tableau d'entier avec les cases du 0 à taille max (ça purrait être de a à taille_max
+--le type c'est une structure on le met au début avant tout les begin
+Type tableau is array(integer range <>) of float; -- va nous mettre un tableau de taille variable, la taille est a préciser lors de la déclaration des variables de ce type
+Pour declaer une variable dans le begin on ajout "declare" juste avant puis un "begine" juste après
+
+
+Scores : T_Tableau ; --on fait une variable de type T_Tableau nommé "Scores"
+
+--Scores'range veut dire "du début à la fin" Scores le nom de la variable de type T_Tableau	
+for i in Scores'range loop
+		Scores(i):=i;
+	end loop;
+
+Pour le type boolean on dit True et False
+
+
+///les pile en ADA////////////////////////////////////////////////////////////////////////////////////////////
+TYPE T_Cellule;                     --T_Cellule correspond à un élément de la pile
+ 
+TYPE T_Pile IS ACCESS T_Cellule;   --T_Pile correspond au pointeur sur un élément
+ 
+TYPE T_Cellule IS
+   RECORD
+      Valeur  : Integer; --Ici on va créer une pile d'entiers
+      Suivant : T_Pile ; --Le suivant correspond à une "sous-pile"
+   END RECORD;
+
+
+////////////////====================================POINTEUR EN ADA=================================//////
+type T_Pointeur is access all Integer; on déclare un type pointeur sur un entier// le all permet de pointer les valeur creer par le user
+ptr_sur_entier:T_pointeur:=null; //on cree un pointeur qui pointe sur un entier hors begin
+ptr_syr_entier.all=123; notre pointeur pointe sur 123
+n: aliased integer; //veut dire que l'entier n peut être pointé par un pointeur
+   n:= 374 ;            
+   ptr_sur_entier := n'access // signifie que ptr_sur_entier pointe sur n et donc ptr_sur_entier.all = 374
+
+
+
+
+
+
+
+
+
 
 
 

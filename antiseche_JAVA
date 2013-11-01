@@ -106,3 +106,32 @@ this.attribut
 //lire dans un fichier
 FileInputStream: in=null; un "pointeur" qui va lire notre fichier text.txt
 
+///////////////////////////////PETIT RAPPEL/////////////////////////////////////////////////////////////
+
+      Une classe permet de définir des objets. Ceux-ci ont des attributs (variables d'instance) et des méthodes (méthodes d’instance + accesseurs).
+    *
+
+      Les objets permettent d'encapsuler du code et des données.
+    *
+
+      Le ou les constructeurs d'une classe doivent porter le même nom que la classe et n'ont pas de type de retour.
+    *
+
+      L'ordre des paramètres passés dans le constructeur doit être respecté.
+    *
+
+      Il est recommandé de déclarer ses variables d'instance private, pour les protéger d'une mauvaise utilisation par le programmeur.
+    *
+
+      On crée des accesseurs et mutateurs (méthodes getters et setters) pour permettre une modification sûre des variables d'instance.
+    *
+
+      Dans une classe, on accède aux variables de celle-ci grâce au mot clé this.
+    *
+
+      Une variable de classe est une variable devant être déclarée static.
+    *
+
+      Les méthodes n'utilisant que des variables de classe doivent elles aussi être déclarées static.
+    *
+
