@@ -1,0 +1,86 @@
+<p class="introduction">Bonjour et bienvenue sur mon site !</p>
+<p>Pour le moment, mon site est un peu <em>vide</em>.
+
+////////////dans le .css on mettre comme nom de balise ".introduction"
+
+///////balise inutile/////////
+<span> </span>
+
+//////////////////////////////////////dans le fichier.css
+p
+{
+color: blue;
+}
+
+
+//////////////////taille du texte
+p
+{
+    font-size: small; (ça peut être, a la place de small, large medium,...)
+}
+h1
+{
+    font-size: large;
+}
+
+/////////////////////police
+balise
+{
+    font-family: police1, police2, police3, serif; (exemple de police Arial ; Arial Black ; Comic Sans MS ;Verdana)
+}
+
+/////////////////text_decoration
+h1
+{
+    text-decoration: blink;
+}
+.souligne
+{
+    text-decoration: underline;
+}
+.barre
+{
+    text-decoration: line-through;
+}
+.ligne_dessus
+{
+    text-decoration: overline;
+}
+
+/////////////////////////////////plus de deco
+h1
+{
+    text-align: center;
+}
+ 
+p
+{
+    text-align: justify;
+}
+ 
+.signature
+{
+    text-align: right;
+}
+
+///////////////////////////////////////////////////////::couleur de fond et de texte
+body (sur la balise body comme ça ça prend tout en compte
+{
+    background-color: black; /* Le fond de la page sera noir */
+    color: white; /* Le texte de la page sera blanc */
+}
+
+//////////////////////display
+mettre a chaque fois display: inline-block;
+cela va transformer la balise en block que l'on pourras après déplacer avec la balise position
+
+postion: fixed ou absolute
+après on choisit avec top, bottom, on redimensionne avec width, height
+
+
+//////////////////les marges
+padding-left ou padding-top marge interieur
+margin-letf ou mmargin-bottom marge extérieur
+
+/////bordure
+	border: 3px solid red;

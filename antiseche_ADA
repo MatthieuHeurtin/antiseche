@@ -1,0 +1,78 @@
+with Ada.text_Io, Ada.Integer_text_Io;
+use Ada.text_Io, Ada.Integer_text_Io;
+
+
+procedure traitement_sequentiel_2 is
+
+	function F(x, a:integer) return integer is
+--variable de la fonction
+		b:integer;
+	begin
+--corps de la fonction
+		
+		if x>a then
+			return x;
+		else
+			return a;
+		end if;
+
+	end;
+
+
+--variable du main
+courant, x, a: integer;
+
+
+begin
+--corp du main
+Get(courant);
+a:=courant;
+Get(courant);
+x:=courant;
+
+
+	while courant /=-1 loop
+
+	a:=F(x, a);
+	Get(courant);
+	x:=courant;
+
+
+
+
+
+
+
+	end loop;
+
+Put(a);
+end;
+
+-- on déclare une constante en ADA
+TailleMax : constant natural := 5 ; 
+
+
+-- tableau en ADA
+Type T_Tableau is array(0..TailleMax) of integer ; -- c'est un tableau d'entier avec les cases du 0 à taille max (ça purrait être de a à taille_max
+--le type c'est une structure on le met au début avant tout les begin
+
+
+Scores : T_Tableau ; --on fait une variable de type T_Tableau nommé "Scores"
+
+--Scores'range veut dire "du début à la fin" Scores le nom de la variable de type T_Tableau	
+for i in Scores'range loop
+		Scores(i):=i;
+	end loop;
+
+Pour le type boolean on dit True et False
+
+
+
+
+
+
+
+
+
+
+

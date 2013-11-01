@@ -1,0 +1,108 @@
+//import des les clase pour pouvoir lire au clavier.
+import java.util.*;
+Scanner sc = new Scanner(System.in);
+String mon_nom=sc.nextLine(); //sc.nextInt pour un int etc....
+System.out.println("Votre nom est " +mon_nom);
+
+/////////////////////////////////////////////////////////////////////LES FICHIERS/////////
+import java.io.*; //on import ça
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////LES SOUS CLASSES
+class Srationnal extends Rationnal
+{
+	private int equa;
+
+	public Srationnal(int a, int b, int c)
+	{
+		super(a,b);//super appelle les classes de la mère et par defaut le constructeur
+		equa=c;
+	}
+
+public abstract class Felin extends Animal //classe abstraite et classe fille en même temps
+////////////////////////////////////////////CONDITION COMME EN C LES BOUCLES AUSSI COMME EN C/////////////
+int i = 0;
+if (i < 0)
+{
+  System.out.println("Ce nombre est négatif !");
+}
+else
+{
+  if(i == 0)
+    System.out.println("Ce nombre est nul !");
+  
+  else
+    System.out.println("Ce nombre est positif !");
+  
+}
+///////////////////////////////////////////////////////////////////////////////////////////INIT TABLEAU
+int tableauEntier[] = {0,1,2,3,4,5,6,7,8,9};
+int tableauEntier[] = new int[6]; avec 6 cases vides
+tableauEntier.lenght nous donne la taille du tableau
+
+////////////////////////////////////////////////////////////////////////////////////Methode et tableau
+  static void parcourirTableau(String[] tabBis)
+  {
+    for(String str : tabBis)
+      System.out.println(str);
+  }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////:
+
+//Une classe 
+class Rational 
+{
+	int num;
+/////////////////////////////////C'est le CONSTRUCTEUR, la fonction qui nous sert a init les valeur
+	public Rational(int a, int b)
+	{
+		num=a;
+		denum=b;
+	}
+//////////////////////////////////
+}
+
+//le main
+public class TestRational {
+	public static void main(String[] args) {
+
+
+Rational r= new Rational(3,2);//on déclare un variable r de type Rational et on init ses attributs.
+
+  System.out.println("Hello World !"); // on affiche hello world
+}
+//////////////////////////////////////////////////////////////////////////ACCESSEURS
+public int getNum()
+{return num;}
+public void setNum(int a)
+{num=a;}
+
+
+/////////////////////////////////////////////////////////////:
+//this c'est quoi?
+
+Une méthode travail sur l'objet du coup elle connait les attribut pas besoin de lui dire, on fait alors
+this.attribut
+
+
+//UNe methode
+	public void affiche()
+	{
+		System.out.println("dans une methode num=" +this.num);
+	}
+
+//quand on met des privates alors on n'a pas accès a l'attribut depuis le dehors de la classe
+
+//quand on met STATIC pour un attribut ça veut dire que lorsque que l'on va l'initialiser il sera init pour tout les objets qui découle de cette classe
+
+
+//lire dans un fichier
+FileInputStream: in=null; un "pointeur" qui va lire notre fichier text.txt
+

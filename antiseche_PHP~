@@ -1,0 +1,46 @@
+//toujours mettre les balise <?php code php ?>
+
+
+
+//variable
+<?php
+$age_du_visiteur = 17;
+?>
+
+//conditions
+<?php
+$age = 8;
+  
+if ($age <= 12) // SI l'âge est inférieur ou égal à 12
+{
+    echo "Salut gamin ! Bienvenue sur mon site !<br />";
+    $autorisation_entrer = "Oui";
+}
+else // SINON
+{
+    echo "Ceci est un site pour enfants, vous êtes trop vieux pour pouvoir  entrer. Au revoir !<br />";
+    $autorisation_entrer = "Non";
+}
+  
+echo "Avez-vous l'autorisation d'entrer ? La réponse est : $autorisation_entrer";
+?>
+
+//boucle
+<?php
+$nombre_de_lignes = 1;
+ 
+while ($nombre_de_lignes <= 100)
+{
+    echo 'Ceci est la ligne n°' . $nombre_de_lignes . '<br />';
+    $nombre_de_lignes++;
+}
+?>
+
+//formulaire
+<form method="post" action="cible.php">
+  
+<p>
+    On insèrera ici les éléments de notre formulaire.
+</p>
+  
+</form>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+	 <link rel="stylesheet" href="style.css" />
+        <title>Titre de la pge web</title>
+    </head>
+ 
+    <body>
+        <!-- Corps de la page -->
+    </body>
+</html>
+/////////////////////////////////////////au debut de chaque page html 5
+
+//////////////////////////////////////////////paragraphe
+balise <p></p>
+<p>Bonjour et bienvenue sur mon site !</p>
+
+///////////////////////////////////////////////////retour à la ligne 
+<br/>
+
+///////////////////////////////////////////////////////taille paragraphe
+<h1> </h1> 1 peu allez de 1 a 6
+
+///////////////////////////////////////////////////////mise en valeur 
+<strong> </strong>
+<em> </em>
+
+/////////////////////////////////////////////////////////liste (pas comme en C
+<ul>
+    <li>element 1</li>
+    <li>Element 2</li>
+    <li>element 3</li>
+</ul>
+
+///////////////////////////////////////////////////lien vers un autre site
+<a href="http://www.siteduzero.com">Site du Zéro</a>
+
+//////////////////////////envoi de mail
+<a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a>
+
+
+////////////////////////:insertion image
+<img src="images/montagne.jpg" alt="Photo de montagne" />
+
+////////////////////////mettre des image intelligement
+<figure>
+    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+    <figcaption>Le logiciel Bloc-Notes</figcaption>
+</figure>
+
+//////////////////////////////////////////////::header
+<header>
+    <!-- Placez ici le contenu de l'en-tête de votre page -->
+</header>
+
+
+/////////////////////////////pied
+<footer>
+    <!-- Placez ici le contenu du pied de page -->
+</footer>
+
+/////////////////////////////////::menu principale
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+//////////////////////////////////////////////////section
+<section>
+    <h1>Ma section de page</h1>
+    <p>Bla bla bla bla</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

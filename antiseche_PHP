@@ -1,0 +1,70 @@
+//toujours mettre les balise <?php code php ?>
+
+
+
+//variable
+<?php
+$age_du_visiteur = 17;
+?>
+
+//conditions
+<?php
+$age = 8;
+  
+if ($age <= 12) // SI l'âge est inférieur ou égal à 12
+{
+    echo "Salut gamin ! Bienvenue sur mon site !<br />";
+    $autorisation_entrer = "Oui";
+}
+else // SINON
+{
+    echo "Ceci est un site pour enfants, vous êtes trop vieux pour pouvoir  entrer. Au revoir !<br />";
+    $autorisation_entrer = "Non";
+}
+  
+echo "Avez-vous l'autorisation d'entrer ? La réponse est : $autorisation_entrer";
+?>
+
+//boucle
+<?php
+$nombre_de_lignes = 1;
+ 
+while ($nombre_de_lignes <= 100)
+{
+    echo 'Ceci est la ligne n°' . $nombre_de_lignes . '<br />';
+    $nombre_de_lignes++;
+}
+?>
+
+//formulaire
+<p>
+    Cette page ne contient que du HTML.<br />
+    Veuillez taper votre prénom :
+</p>
+ 
+<form action="cible.php" method="post">
+<p>
+    <input type="text" name="prenom" />
+    <input type="submit" value="Valider" />
+</p>
+</form>
+
+//recup formulaire
+<?php 
+	if (isset($_POST['mdp']) AND $_POST['mdp'] == "salut")
+	
+		{
+			echo "Bonjour ";echo $_POST['login'];?> Pour continer <a href="/secret/prive.php">cliquez ici.</a>
+
+<?php 
+		}
+	else
+		{
+			echo "va te faire mettre";
+		}
+?>
+
+
+//les balises include
+
+<?php include("../include/menu.php"); ?>
