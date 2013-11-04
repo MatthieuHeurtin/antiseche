@@ -306,7 +306,7 @@ siginfo_t {
 }
 
 //////////////////////////////////////////////PIPE/////////////////////////////////
-pipe prend en param un tableau de deux int et les init: un des deux sera l'entré et l'autre la sortie fd[0] est la sortie
+pipe prend en param un tableau de deux int et les init: un des deux sera l'entré et l'autre la sortie, fd[0] est la sortie
 
 ssize_t write(int fd, const void *buf, size_t count);
 write()  lit  au  maximum count octets dans la zone mémoire pointée par
@@ -321,5 +321,11 @@ stdout=1
 stderr=2
 close(pfd[0]); /* close the read side */
 
+//REDIRECTION EN C
+int in=open(seq->in, O_RDONLY);//on ouvre un fichier ayant pour descripteur 'in'
+int out=open(seq->out, O_WRONLY | O_TRUNC | O_CREAT, S_IRUSR | S_IRGRP | S_IWGRP | S_IWUSR);//on ouvre un fichier ayant pour descripteur 'out'
+dup2(in, 0); //on relie le fichier a notre entrée standard
+close(in); //on ferme le fichier
+execvp(*seq->seq[0], *seq->seq);
 
 
