@@ -140,9 +140,9 @@ Pour le type boolean on dit True et False
 
 ///les pile en ADA////////////////////////////////////////////////////////////////////////////////////////////
 TYPE T_Cellule;                     --T_Cellule correspond à un élément de la pile
- 
+  ///////////////////////pour les listes, on le met ans le .adb
 TYPE T_Pile IS ACCESS T_Cellule;   --T_Pile correspond au pointeur sur un élément
- 
+
 TYPE T_Cellule IS
    RECORD
       Valeur  : Integer; --Ici on va créer une pile d'entiers
@@ -150,6 +150,16 @@ TYPE T_Cellule IS
    END RECORD;
 
 
+
+////////////////////////
+Cel:liste; --c'est un poiuteur qui pointe vers une variable de type maillon
+begin
+Cel:=new maillon; --on lui cree l'espace en memoire
+Cel.all.EL:=90;
+Put_Line("COUCOU");
+end ajout_tete;
+Les variables private ne peuvent être lu que dans le package, pas d'accesseur ni de mutateur comment en JAVA
+Que dans le package
 ////////////////====================================POINTEUR EN ADA=================================//////
 type T_Pointeur is access all Integer; on déclare un type pointeur sur un entier// le all permet de pointer les valeur creer par le user
 ptr_sur_entier:T_pointeur:=null; //on cree un pointeur qui pointe sur un entier hors begin
@@ -159,8 +169,45 @@ n: aliased integer; //veut dire que l'entier n peut être pointé par un pointeu
    ptr_sur_entier := n'access // signifie que ptr_sur_entier pointe sur n et donc ptr_sur_entier.all = 374
 
 
+//////////////////////////////////////////////////////GENERICITE ADA/////////////////////////////////:
 
 
+procedure test is
+
+
+generic 
+	type blou is range <>;
+	procedure blou_add(x,y : in out blou);
+
+procedure blou_add(x,y: in out blou) is
+c:blou;
+begin
+c:=x+y;
+y:=c;
+end blou_add;
+
+procedure blou_blou is new blou_add(integer); --TU as vu le ';' Mettre PACKAGE a la place de procedure si on instancie un package generique
+
+m:integer :=6;
+n:integer :=4;
+begin
+blou_blou(m,n);
+Put(n);
+end test; --c'est fin de test
+
+
+/////////////////////////////////////////////:::://PACKAGE//////////////////////////////////////
+.ads == .h
+PACKAGE Integer_Array IS
+
+END Integer_Array ;
+
+
+
+.adb == .c
+PACKAGE BODY Integer_Array IS
+
+END Integer_Array ;
 
 
 
