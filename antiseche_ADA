@@ -199,7 +199,14 @@ end test; --c'est fin de test
 /////////////////////////////////////////////:::://PACKAGE//////////////////////////////////////
 .ads == .h
 PACKAGE Integer_Array IS
+--mettre ça pour être générique
+generic
+    type Element is private;
+    with procedure Put_El(E : in Element);
 
+
+puis nos prototypes
+    
 END Integer_Array ;
 
 
