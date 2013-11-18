@@ -159,7 +159,7 @@ Cel.all.EL:=90;
 Put_Line("COUCOU");
 end ajout_tete;
 Les variables private ne peuvent être lu que dans le package, pas d'accesseur ni de mutateur comment en JAVA
-Que dans le package
+Que dans le package !!!
 ////////////////====================================POINTEUR EN ADA=================================//////
 type T_Pointeur is access all Integer; on déclare un type pointeur sur un entier// le all permet de pointer les valeur creer par le user
 ptr_sur_entier:T_pointeur:=null; //on cree un pointeur qui pointe sur un entier hors begin

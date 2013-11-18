@@ -343,4 +343,27 @@ char *nom={"*.c"};
 glob(nom, FLAGS, NULL, &joker); // dans JOKER.gl_pathv on a tout ce qui finit par *.c
 
 
+///////////////////////////////////////////////////////////////LES THREADS
+int pthread_create (pthread_t * thread, pthread_attr_t * attr, void * (* start_routine) (void *), void * arg); 
+//arg 1, le 'pid' du thread, arg 2 options, on met NULL, arg 3 pointeur vers la fonction executé par le thread, arg 4 argument passer a la fonction
+//executer par le threads
+
+  pthread_t th1, th2; //le 'PID' des threads
+  void *ret;
+pthread_create (&th1, NULL, my_thread_process, NULL); // on cree un thread de 'pid' th1, 
+
+
+int pthread_join (pthread_t th, void ** thread_return);
+//arg 1 le nom du thread a attendre, arg 2 valeur de retour du threads peut être NULL
+
+pthread_exit (0);
+//a la fin de la fcontion du thread, la meme qu'un exit
+
+
+
+
+
+
+
+
 
