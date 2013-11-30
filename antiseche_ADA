@@ -124,6 +124,8 @@ TailleMax : constant natural := 5 ;
 -- tableau en ADA
 Type T_Tableau is array(0..TailleMax) of integer ; -- c'est un tableau d'entier avec les cases du 0 à taille max (ça purrait être de a à taille_max
 --le type c'est une structure on le met au début avant tout les begin
+en dans une procedure
+tab:array(0..8,0..8) of integer; 
 Type tableau is array(integer range <>) of float; -- va nous mettre un tableau de taille variable, la taille est a préciser lors de la déclaration des variables de ce type
 Pour declaer une variable dans le begin on ajout "declare" juste avant puis un "begine" juste après
 
@@ -216,7 +218,22 @@ PACKAGE BODY Integer_Array IS
 
 END Integer_Array ;
 
+-----------------/////////////////les EXCEPTION EN ADA/////////////////////////////////
 
+
+avant le begin faire
+name_of_exception:exception
+pour un truc dangereur tu met 
+
+TRY:begin
+	instruction dangeureuse
+
+
+
+
+exception
+ when name_of_exception => instru_a_faire
+end TRY;
 
 
 
