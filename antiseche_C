@@ -344,12 +344,14 @@ glob(nom, FLAGS, NULL, &joker); // dans JOKER.gl_pathv on a tout ce qui finit pa
 
 
 ///////////////////////////////////////////////////////////////LES THREADS
+#include <pthread.h>
+-lpthread -D_REENTRANT //a mettre au compilateur comme option
 int pthread_create (pthread_t * thread, pthread_attr_t * attr, void * (* start_routine) (void *), void * arg); 
 //arg 1, le 'pid' du thread, arg 2 options, on met NULL, arg 3 pointeur vers la fonction executé par le thread, arg 4 argument passer a la fonction
 //executer par le threads
 
   pthread_t th1, th2; //le 'PID' des threads
-  void *ret;
+  void * my_thread_process(void *bla);
 pthread_create (&th1, NULL, my_thread_process, NULL); // on cree un thread de 'pid' th1, 
 
 

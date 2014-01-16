@@ -14,7 +14,6 @@ message='Bonjour tout le monde'
 #… et pour valeur Bonjour tout le monde.
 #afficher une variable
 echo $message
-
 #POUR SAUT DE LIGNE 
 
 #Si vous voulez insérer des retours à la ligne, il faudra activer le paramètre -e et utiliser le symbole \n :
@@ -46,29 +45,24 @@ else
         echo "J'te connais pas, ouste !"
 fi
 
-#BOUCLE TANT QUE
 while [ test ]
 do
         echo 'Action en boucle'
 done
 
 
-#VARIABLES DEFINIES PAR DEFAUT
 
+#retour d'une commande dans une variable
+nom=$(head -n 1 /root/Desktop/liste_nom)
 
-$*	contient tous les arguments passés à la fonction
-$#	contient le nombre d'argument
-$?	contient le code de retour de la dernière opération
-$0	contient le nom du script
-$n	contient l'argument n, n étant un nombre
-$!	contient le PID de la dernière commande lancée
+#supprime ligne 1 à 5 dans un fichier le caractère $ est la dernière ligne
+sed '1,5d' test_h
 
+#compte ligne
+wc
 
-
-#A LA FIN METTRE
-exit 0;
-
-
+#couper une ligne command cut
+$ cut -c 2-5 noms.txt 
 
 
 
@@ -77,4 +71,15 @@ exit 0;
 
 
 
+aircrack-ng -w /root/Desktop/dico/abbr.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/acr-diag.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/aeneid.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/afr_dbf.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/Aircrack_passwords.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/Aircrack_passwords.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
+aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
 
+./john --incremental=alnum --stdout=6 > dico.lst

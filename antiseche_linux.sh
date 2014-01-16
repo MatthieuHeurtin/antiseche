@@ -61,6 +61,9 @@ sed '1,5d' test_h
 #compte ligne
 wc
 
+#couper une ligne command cut
+Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de chaque ligne du fichier, vous taperez
+$ cut -c 2-5 noms.txt 
 
 
 

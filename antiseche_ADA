@@ -237,7 +237,24 @@ end TRY;
 
 
 
+///////////////////LES PACKAGE DE PACKAGE///////////////
+dans le .ads
+--====================================================================================================
+--on instancie le package
+procedure affiche_element_liste(int:integer); 
+package Myliste is new liste_generique(integer, affiche_element_liste);
+--====================================================================================================
+dans le .adb
+--====================================================================================================
+--on instancie le package liste
+procedure affiche_element_liste(int:integer) is
+begin
+	Put(int);New_Line;
+end affiche_element_liste;
 
+use Myliste;
+--====================================================================================================
+FAIT GAFFE AU LIEN noublie pas les points P.Myliste.liste
 
 
 
