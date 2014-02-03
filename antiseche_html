@@ -37,6 +37,9 @@ balise <p></p>
 ///////////////////////////////////////////////////lien vers un autre site
 <a href="http://www.siteduzero.com">Site du Zéro</a>
 
+dans un autre onglet
+target="_blank"
+
 //////////////////////////envoi de mail
 <a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a>
 
