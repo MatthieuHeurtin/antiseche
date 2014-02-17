@@ -66,6 +66,9 @@ Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de ch
 $ cut -c 2-5 noms.txt 
 
 
+#openssl: on crypt le mot secret en base64 avec openssl
+$ echo -n "secret" | openssl enc -base64
+
 
 ./john --incremental=All --stdout | aircrack-ng -b 00:1A:2B:3B:CA:99 -w - /root/test-01.cap
 
