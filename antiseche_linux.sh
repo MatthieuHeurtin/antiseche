@@ -74,6 +74,9 @@ $ echo "c2VjcmV0" | openssl enc -base64 -d
 //-d pour décoder
 openssl enc -base64 -d -in fic1.enc -out fic1.dec
 
+#pour avoir la colone 7 et la colone 10  séparer par un espace
+gawk '{}{print $7 " " $10}' sortie_speed_aes 
+
 
 
 ./john --incremental=All --stdout | aircrack-ng -b 00:1A:2B:3B:CA:99 -w - /root/test-01.cap
