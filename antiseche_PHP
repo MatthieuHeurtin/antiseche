@@ -49,6 +49,15 @@ while ($nombre_de_lignes <= 100)
 </p>
 </form>
 
+
+//FORMULAIRE case à cocher
+<select name="choix">
+    <option value="choix1">Choix 1</option>
+    <option value="choix2">Choix 2</option>
+    <option value="choix3">Choix 3</option>
+    <option value="choix4">Choix 4</option>
+</select>
+
 //recup formulaire
 <?php 
 	if (isset($_POST['mdp']) AND $_POST['mdp'] == "salut")
