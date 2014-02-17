@@ -71,7 +71,8 @@ $ echo -n "secret" | openssl enc -base64
 #pour décrypter on met -d
 $ echo "c2VjcmV0" | openssl enc -base64 -d
 #pour les fichier// on le code en base 64 le fichier fic1.enc et on met le chiffré dans fic1.dec
-openssl enc -base64 -in fic1.enc -out fic1.dec
+//-d pour décoder
+openssl enc -base64 -d -in fic1.enc -out fic1.dec
 
 
 
