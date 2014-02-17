@@ -50,7 +50,7 @@ while ($nombre_de_lignes <= 100)
 </form>
 
 
-//FORMULAIRE case à cocher
+//FORMULAIRE menu déroulant
 <select name="choix">
     <option value="choix1">Choix 1</option>
     <option value="choix2">Choix 2</option>
@@ -58,6 +58,9 @@ while ($nombre_de_lignes <= 100)
     <option value="choix4">Choix 4</option>
 </select>
 
+
+//formulaire case à coher
+<input type="checkbox" name="case" id="case" /> <label for="case">Ma case à cocher</label>
 //recup formulaire
 <?php 
 	if (isset($_POST['mdp']) AND $_POST['mdp'] == "salut")
