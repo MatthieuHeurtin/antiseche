@@ -66,7 +66,7 @@ Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de ch
 $ cut -c 2-5 noms.txt 
 
 
-#openssl: on crypt le mot secret en base64 avec openssl
+#openssl: on crypt le mot secret en base64 avec openssl //tape openssl pour connaitre les différent type de cryptage
 $ echo -n "secret" | openssl enc -base64
 
 
