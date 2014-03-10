@@ -77,6 +77,11 @@ openssl enc -base64 -d -in fic1.enc -out fic1.dec
 #pour avoir la colone 7 et la colone 10  séparer par un espace
 gawk '{}{print $7 " " $10}' sortie_speed_aes 
 
+#nombre aléatoire
+echo $RANDOM
+
+#doublons dans fichier
+uniq -c nom_fichier #affiche le nombre de chaque occurence
 
 
 ./john --incremental=All --stdout | aircrack-ng -b 00:1A:2B:3B:CA:99 -w - /root/test-01.cap
