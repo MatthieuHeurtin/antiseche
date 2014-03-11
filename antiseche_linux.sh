@@ -65,12 +65,23 @@ wc
 Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de chaque ligne du fichier, vous taperez
 $ cut -c 2-5 noms.txt 
 
+#commande more
+    diff version1 version2 | more
+
 
 
 ./john --incremental=All --stdout | aircrack-ng -b 00:1A:2B:3B:CA:99 -w - /root/test-01.cap
 
+#verifier si une variale est vide
+if [ "$1" =="" ]; then 
 
-
+#vérifier si le fichier est là
+if [ -f "$1" ];
+	then
+		echo "il est là"
+	else 
+		echo "fichier not found"
+	fi
 
 aircrack-ng -w /root/Desktop/dico/abbr.txt "/root/$nom"
 aircrack-ng -w /root/Desktop/dico/acr-diag.txt "/root/$nom"
