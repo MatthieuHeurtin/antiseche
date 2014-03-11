@@ -37,6 +37,9 @@ balise <p></p>
 ///////////////////////////////////////////////////lien vers un autre site
 <a href="http://www.siteduzero.com">Site du Zéro</a>
 
+dans un autre onglet
+target="_blank"
+
 //////////////////////////envoi de mail
 <a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a>
 
@@ -93,6 +96,10 @@ balise <p></p>
 ///////////////////////////////////////case à cocher
 <input type="checkbox" name="case" id="case" /> <label for="case">Ma case à cocher</label>
 
+
+//////////////////////////////////////lien vers même pas 
+<div id="dernieres-nouvelles">...</div>
+<a href="#dernieres-nouvelles">Les dernières nouvelles</a>
 
 
 

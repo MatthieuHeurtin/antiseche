@@ -68,6 +68,23 @@ $ cut -c 2-5 noms.txt
 #commande more
     diff version1 version2 | more
 
+#openssl: on crypt le mot secret en base64 avec openssl //tape openssl pour connaitre les différent type de cryptage
+$ echo -n "secret" | openssl enc -base64
+#pour décrypter on met -d
+$ echo "c2VjcmV0" | openssl enc -base64 -d
+#pour les fichier// on le code en base 64 le fichier fic1.enc et on met le chiffré dans fic1.dec
+//-d pour décoder
+openssl enc -base64 -d -in fic1.enc -out fic1.dec
+
+#pour avoir la colone 7 et la colone 10  séparer par un espace
+gawk '{}{print $7 " " $10}' sortie_speed_aes 
+
+#nombre aléatoire
+echo $RANDOM
+
+#doublons dans fichier
+uniq -c nom_fichier #affiche le nombre de chaque occurence
+
 
 
 ./john --incremental=All --stdout | aircrack-ng -b 00:1A:2B:3B:CA:99 -w - /root/test-01.cap
