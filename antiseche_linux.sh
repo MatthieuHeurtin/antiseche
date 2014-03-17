@@ -59,7 +59,7 @@ nom=$(head -n 1 /root/Desktop/liste_nom)
 sed '1,5d' test_h
 
 #compte ligne
-wc
+cat nom_fichier | wc -l
 
 #couper une ligne command cut
 Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de chaque ligne du fichier, vous taperez
