@@ -82,6 +82,8 @@ gawk '{}{print $7 " " $10}' sortie_speed_aes
 #nombre aléatoire
 echo $RANDOM
 
+#afficher numéro ligne avec grep
+
 #doublons dans fichier
 uniq -c nom_fichier #affiche le nombre de chaque occurence
 
