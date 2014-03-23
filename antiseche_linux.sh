@@ -58,8 +58,15 @@ nom=$(head -n 1 /root/Desktop/liste_nom)
 #supprime ligne 1 à 5 dans un fichier le caractère $ est la dernière ligne
 sed '1,5d' test_h
 
+#affiche ligne 3
+sed -n 3p fich
+
+#affiche ligne X
+LINE=`head -X fichier | tail -1` 
+
+
 #compte ligne
-wc
+cat nom_fichier | wc -l
 
 #couper une ligne command cut
 Par exemple, si vous souhaitez conserver uniquement les caractères 2 à 5 de chaque ligne du fichier, vous taperez
