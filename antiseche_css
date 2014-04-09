@@ -101,7 +101,10 @@ p
     border-radius: 10px; bordure arrondie
 }
 
-
+p
+{
+    border-radius: 10px 5px 10px 5px;
+}
 
 
 
