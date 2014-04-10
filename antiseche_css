@@ -106,7 +106,8 @@ p
     border-radius: 10px 5px 10px 5px;
 }
 
-
+//ombres
+box-shadow: 6px 6px 0px black;
 
 -webkit-transform : rotate(30deg);
 -moz-transform : rotate(30deg);
