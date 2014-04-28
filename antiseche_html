@@ -107,6 +107,32 @@ target="_blank"
 
 
 
+/////////////////Tableau
+<table>
+   <tr>
+       <td>Carmen</td>
+       <td>33 ans</td>
+       <td>Espagne</td>
+   </tr>
+   <tr>
+       <td>Michelle</td>
+       <td>26 ans</td>
+       <td>États-Unis</td>
+   </tr>
+</table>
+
+
+////CSS D'un tableau
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: 1px solid black;
+}
+
+
 
 
 
