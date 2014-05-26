@@ -107,32 +107,55 @@ target="_blank"
 
 
 
-/////////////////Tableau
-<table>
-   <tr>
-       <td>Carmen</td>
-       <td>33 ans</td>
-       <td>Espagne</td>
-   </tr>
-   <tr>
-       <td>Michelle</td>
-       <td>26 ans</td>
-       <td>États-Unis</td>
-   </tr>
-</table>
+<table class="limitBar">
+    <thead>
+    <tr> <!-- titre des colonnes du tableau-->
+        <td>Nom du vendeur</td>
+        <td>Produit</td>
+        <td>Date de début</td>
+        <td>Durée (semaine)</td>
+        <td>Quantité</td>
+        <td>Arrêtez ce contrat</td>
 
+    </tr>
+    </thead>
+    
+        <tfoot>
+    <tr> <!-- titre des colonnes du tableau-->
+        <td>Nom du vendeur</td>
+        <td>Produit</td>
+        <td>Date de début</td>
+        <td>Durée</td>
+        <td>Quantité</td>
+        <td>Arrêtez ce contrat</td>
+
+
+    </tr>
+    </tfoot>
+    <tbody>
+        
+         </tbody></table>
+
+    </body>
 
 ////CSS D'un tableau
 table
 {
-    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    text-align: center;
+    border-collapse: collapse; 
+    width: 60%;
+    margin: auto;
+    
 }
 td
 {
     border: 1px solid black;
 }
-
-
+thead, tfoot
+{
+background-color:#D0E3FA;
+border:1px solid #6495ed;
+}
 
 
 
