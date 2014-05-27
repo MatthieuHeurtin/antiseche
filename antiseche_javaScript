@@ -1,0 +1,24 @@
+// afficher une boite de dialogue quand on clique sur le lien
+
+<a href="#" onclick="alert('Bonjour !');">lien</a>
+
+////balise javascript pour le mettre directement dans du html
+<script type="text/javascript">
+<!--
+   /* et vous pouvez placer votre code JS ici
+   sans etre inquiete par les vieux navigateurs */
+//-->
+</script>
+
+
+//la script est dans une autre endroit
+<script type="text/javascript" src="script.js"></script>
+
+//dans un script variable
+var nom;
+
+//entrez au clavier
+var age = prompt("Quel âge avez-vous ? (en années)"); // on demande l'age
+alert("Vous avez " + age + " ans");          // on affiche la phrase
+
+
