@@ -121,3 +121,28 @@ aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
 aircrack-ng -w /root/Desktop/dico/dico.txt "/root/$nom"
 
 ./john --incremental=alnum --stdout=6 > dico.lst
+
+
+
+#####parse a file
+#!/bin/bash
+
+                echo "filename;setup;perimeter;body;"
+
+for filename in ./*.bat ; do
+
+                echo "$filename;"
+
+                cat "$filename" |awk '{for(i=0;i<=NF;i++) if (tolower($i)=="-setup") print $(i+1)}'
+
+                                echo ";"
+
+                cat "$filename" |awk '{for(i=0;i<=NF;i++) if (tolower($i)=="-perimeter") print $(i+1)}'
+
+                echo ";"
+
+                cat "$filename"
+
+                echo ";"
+
+done
